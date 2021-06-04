@@ -19,6 +19,13 @@ spec:
       containers:
         - name: payment
           image: jithendar/payment:IMAGETAG
+          resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "64Mi"
+            cpu: "250m"
           ports:
             - containerPort: 8080
           env:
