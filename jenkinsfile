@@ -9,7 +9,7 @@ pipeline {
 
     stages {
         
-        stage ('Build DKIM frontend') {
+        stage ('Build DKIM Payment') {
             when {
                 triggeredBy 'github'
                  }
@@ -20,7 +20,7 @@ pipeline {
                 '''
                 }
                 }
-        stage ('Push DKIM frontend') {
+        stage ('Push DKIM Payment') {
             when {
                 triggeredBy 'github'
                  }
