@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: payment
-          image: jithendar/payment:10.5
+          image: jithendar/payment:image_tag
           ports:
             - containerPort: 8080
           env:
